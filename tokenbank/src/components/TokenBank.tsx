@@ -74,7 +74,7 @@ export function TokenBank() {
   // PublicClient查询客户端
   const publicClient = createPublicClient({
     chain: sepolia,
-    transport: http(),
+    transport: http('https://ethereum-sepolia-rpc.publicnode.com'),
   });
 
   // 获取 WalletClient
